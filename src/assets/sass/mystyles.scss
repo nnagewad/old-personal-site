@@ -1,0 +1,84 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700|IBM+Plex+Serif:600,700');
+
+$body-background-color: #fafafb;
+$footer-background-color: rgba(245, 245, 245, 0.9);
+$text: $grey-darker;
+
+$family-sans-serif: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+$family-serif: 'IBM Plex Serif', 'Georgia', Times, serif;
+
+.title {
+  font-family: $family-serif;
+}
+
+$body-size: calc(15.75px + (18 - 15.75) * ((100vw - 300px) / (1600 - 300)));
+
+$section-padding: 3rem 1.5rem;
+
+$site-green: #3D5C00;
+$link: $site-green;
+$link-hover: darken($link, 25%);
+
+$navbar-item-active-color: $link;
+$navbar-item-focus-color: $link;
+$navbar-item-hover-color: $link-hover;
+$navbar-item-hover-background-color: white;
+
+$title-weight: $weight-bold;
+
+::selection {
+  background: rgba($site-green, .35);
+}
+
+.card {
+  h3 {
+    font-weight: $weight-semibold;
+    font-family: $family-serif;
+  }
+}
+
+footer.footer {
+  padding: 2rem 1.5rem;
+}
+
+a {
+  font-family: $family-serif;
+  font-weight: $weight-semibold;
+}
+
+p > a {
+  position: relative;
+}
+
+p {
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $link;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.25s ease;
+  }
+  a:hover:before,
+  a:focus:before {
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+}
+
+@import "~bulma/sass/utilities/derived-variables";
+@import "~bulma/sass/utilities/mixins";
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/components/card";
+@import "~bulma/sass/components/navbar";
+@import "~bulma/sass/grid/columns";
+@import "~bulma/sass/layout/_all";
