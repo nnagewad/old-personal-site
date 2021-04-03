@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-medium is-dark" id="hero">
+  <section class="hero is-medium" id="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="columns is-multiline is-centered">
@@ -22,7 +22,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bottom-paddingless {
-  padding-bottom: 0;
-}
+  @import '../assets/sass/mystyles.scss';
+
+  .hero {
+    background-color: $site-green;
+  }
+
+  .title, .subtitle {
+    color: white;
+  }
+
+  .bottom-paddingless {
+    padding-bottom: 0;
+  }
 </style>

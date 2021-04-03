@@ -18,18 +18,20 @@ $body-size: calc(15.75px + (18 - 15.75) * ((100vw - 300px) / (1600 - 300)));
 $section-padding: 3rem 1.5rem;
 
 $site-green: #3D5C00;
+$site-light-green: #d3e3bb;
+
 $link: $site-green;
 $link-hover: darken($link, 25%);
 
 $navbar-item-active-color: $link;
 $navbar-item-focus-color: $link;
-$navbar-item-hover-color: $link-hover;
-$navbar-item-hover-background-color: white;
+$navbar-item-hover-color: $site-green;
+$navbar-item-hover-background-color: $site-light-green;
 
 $title-weight: $weight-bold;
 
 ::selection {
-  background: rgba($site-green, .35);
+  background: $site-light-green;
 }
 
 .card {

@@ -65,11 +65,13 @@
 <style lang="scss" scoped>
   @import '../assets/sass/mystyles.scss';
   
+  .navbar, .navbar-menu {
+    background-color: darken($grey-darker, 10%);
+  }
+
   .navbar {
-    border-bottom: 2px solid $site-green;
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
     &.is-fixed-top {
-      max-width: 1600px;
+      max-width: 1440px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -79,18 +81,26 @@
     svg {
       height: 27px;
       width: auto;
-      fill: $link;
+      fill: white;
     }
     a:hover {
       svg {
-        fill: $link-hover;
+        fill: $site-light-green;
       }
+    }
+  }
+
+  .navbar-burger {
+    color: white;
+    &:hover {
+      background: $site-light-green;
+      color: $site-green;
     }
   }
 
   .navbar-item {
     font-weight: $weight-bold;
-    color: $link;
+    color: white;
   }
 
   svg {

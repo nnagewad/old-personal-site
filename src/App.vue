@@ -36,7 +36,7 @@
   @import "assets/sass/mystyles.scss";
 
   #app {
-    max-width: 1600px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
