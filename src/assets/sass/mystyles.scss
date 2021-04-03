@@ -23,7 +23,7 @@ $body-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1440 - 300)));
 $section-padding: 3rem 1.5rem;
 
 $link: $site-green;
-$link-hover: darken($link, 25%);
+$link-hover: darken($link, 7.5%);
 
 $navbar-item-active-color: $link;
 $navbar-item-focus-color: $link;
