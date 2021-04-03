@@ -14,20 +14,11 @@
           </figure>
         </div>
         <div class="column">
-          <p>Having spent three years at Toronto tech darling FreshBooks, during a period of immense growth and change, working on the Webby-nominated website as a Front-End Developer, it was my job to not only build a world-class website but also help curate a simple and positive experience for the end-user.</p>
-          <br>
-          <p>
-            My interest in the user’s experience led me to a UX path, where I use
-            <strong>research</strong>,
-            <strong>storytelling</strong>,
-            <strong>empathy</strong>,
-            <strong>strategy</strong> and
-            <strong>technology</strong> in creating both an incredible and lasting experience for the user.
-          </p>
-          <br>
-          <p>I am currently based in London, England where I work at the Government Digital Service as an interaction designer.</p>
-          <br>
-          <p>Aside from my interest in UX and Technology, I am a total pop-culture nerd who makes a great effort to attend concerts and the cinema. I love to travel and visit art galleries, museums, and craft breweries.</p>
+          <p>Although he graduated with a degree in film studies, Nikin’s interest in technology and design led him to a career in UX design. From Freshbooks to Say Yeah, Nikin helped craft interfaces and front-end code that balanced business and user objectives.</p>
+
+          <p>Having spent all his life in Canada, Nikin recently moved to London, England where he’s now focused on supporting the Government Digital Service as an interaction designer.</p>
+
+          <p>Aside from his day-to-day work, Nikin is an avid photographer, aiming to capture the everyday as cinematic.</p>
         </div>
       </div>
     </div>
@@ -39,3 +30,11 @@ export default {
   name: "About"
 };
 </script>
+
+<style lang="scss" scoped>
+  @import '../assets/sass/mystyles.scss';
+
+  p {
+    padding-bottom: 1em;
+  }
+</style>
