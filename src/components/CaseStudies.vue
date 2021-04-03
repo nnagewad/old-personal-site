@@ -1,7 +1,7 @@
 <template>
   <section class="section" id="case-studies">
     <div class="container">
-      <h2 class="title is-capitalized is-2">Case Studies</h2>
+      <h2 class="title is-capitalized is-3">Case Studies</h2>
 
       <div v-if="loadingState" class="columns">
         <div class="column is-two-thirds">
@@ -37,7 +37,7 @@
                 </figure>
               </div>
               <div class="card-content">
-                <h3 class="is-size-5">{{ mediumPost.title }}</h3>
+                <h3>{{ mediumPost.title }}</h3>
               </div>
               <div class="hover-text has-text-centered">
                 <p class="has-text-white">Redirect to</p>
