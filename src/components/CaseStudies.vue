@@ -51,7 +51,7 @@
                 <h3 class="is-size-5">{{ mediumPost.title }}</h3>
               </div>
               <div class="hover-text has-text-centered">
-                <p class="has-text-white">Available on</p>
+                <p class="has-text-white">Redirect to</p>
                 <div style="padding-top:10px;">
                   <svg
                     width="150"
