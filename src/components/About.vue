@@ -35,6 +35,6 @@ export default {
   @import '../assets/sass/mystyles.scss';
 
   p {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   }
 </style>
