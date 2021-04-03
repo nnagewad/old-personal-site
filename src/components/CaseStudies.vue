@@ -131,51 +131,53 @@ export default {
     }
   }
 
-  .column {
-    .card {
-      height: 100%;
-      position: relative;
-      a {
-        .card-image {
-          overflow: hidden;
-        }
-        .image.is-16by9,
-        .card-content {
-          transition: filter 0.5s ease;
-        }
-        .card-content {
-          line-height: 1.125;
-        }
+  .card {
+    height: 100%;
+    position: relative;
+    a {
+      .card-image {
+        overflow: hidden;
       }
-      a:before {
-        position: absolute;
-        content: " ";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        z-index: 10;
-        background-color: rgba(20, 20, 20, 1);
-        transition: opacity 0.5s ease;
+      .image.is-16by9,
+      .card-content {
+        transition: filter 0.5s ease;
       }
-      a:focus:before,
-      a:hover:before {
-        opacity: 0.85;
-      }
-      a:focus,
-      a:hover {
-        .image.is-16by9 {
-          filter: grayscale(1) blur(2px);
-        }
-        .card-content {
-          filter: blur(2px);
-        }
-        .hover-text {
-          opacity: 1;
-        }
+      .card-content {
+        line-height: 1.125;
       }
     }
+    a:before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 10;
+      background-color: rgba(20, 20, 20, 1);
+      transition: opacity 0.5s ease;
+    }
+    a:focus:before,
+    a:hover:before {
+      opacity: 0.85;
+    }
+    a:focus,
+    a:hover {
+      .image.is-16by9 {
+        filter: grayscale(1) blur(2px);
+      }
+      .card-content {
+        filter: blur(2px);
+      }
+      .hover-text {
+        opacity: 1;
+      }
+    }
+  }
+
+  .image img {
+    object-fit: cover;
   }
 
   .hover-text {
