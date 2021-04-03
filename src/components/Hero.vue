@@ -7,9 +7,7 @@
             <h1 class="title is-lowercase is-1">Nikin Nagewadia</h1>
           </div>
           <div class="column is-two-thirds">
-            <p
-              class="subtitle is-5 has-text-centered has-text-weight-bold"
-            >A UX Designer who employs research, empathy-mapping, storytelling, and strategy to provide user&#8209;centric solutions.</p>
+            <p class="subtitle is-5 has-text-centered">Interaction designer</p>
           </div>
         </div>
       </div>
