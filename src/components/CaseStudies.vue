@@ -23,8 +23,7 @@
       <div v-if="errorMessage" class="columns is-centered">
         <div class="column is-narrow">
           <p class="has-text-centered is-size-5" v-scroll-reveal="{ delay: 500 }">
-            If you are seeing this message, don't fret. You can read my case studies over at
-            <a href="https://nkngwd.medium.com/" target="_blank">Medium</a>.
+            You can find all my articles on <a href="https://nkngwd.medium.com/">Medium</a>.
           </p>
         </div>
       </div>
