@@ -2,9 +2,14 @@
 @import '~bulma/sass/utilities/functions';
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700|IBM+Plex+Serif:600,700');
 
+$site-black: #1c1c1c;
+$site-green: #3D5C00;
+$site-light-green: #d3e3bb;
+$site-white: #ffffff;
+
 $body-background-color: #fafafb;
 $footer-background-color: rgba(245, 245, 245, 0.9);
-$text: $grey-darker;
+$text: $site-black;
 
 $family-sans-serif: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 $family-serif: 'IBM Plex Serif', 'Georgia', Times, serif;
@@ -16,9 +21,6 @@ $family-serif: 'IBM Plex Serif', 'Georgia', Times, serif;
 $body-size: calc(15.75px + (18 - 15.75) * ((100vw - 300px) / (1600 - 300)));
 
 $section-padding: 3rem 1.5rem;
-
-$site-green: #3D5C00;
-$site-light-green: #d3e3bb;
 
 $link: $site-green;
 $link-hover: darken($link, 25%);
@@ -32,13 +34,6 @@ $title-weight: $weight-bold;
 
 ::selection {
   background: $site-light-green;
-}
-
-.card {
-  h3 {
-    font-weight: $weight-semibold;
-    font-family: $family-serif;
-  }
 }
 
 footer.footer {

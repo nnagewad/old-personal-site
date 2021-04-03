@@ -66,7 +66,7 @@
   @import '../assets/sass/mystyles.scss';
   
   .navbar, .navbar-menu {
-    background-color: darken($grey-darker, 10%);
+    background-color: $site-black;
   }
 
   .navbar {
@@ -81,7 +81,7 @@
 
   .navbar-item {
     font-weight: $weight-bold;
-    color: white;
+    color: $site-white;
   }
 
   .navbar-burger {
@@ -95,7 +95,7 @@
   svg {
     height: 27px;
     width: auto;
-    fill: white;
+    fill: $site-white;
     transition: all 0.5s ease;
   }
 

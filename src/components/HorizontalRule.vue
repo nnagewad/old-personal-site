@@ -8,7 +8,7 @@
   @import '../assets/sass/mystyles.scss';
   
   hr {
-    border: 3px solid $grey-darker;
+    border: 3px solid $site-black;
     margin: 0;
   }
 </style>

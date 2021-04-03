@@ -29,7 +29,7 @@ export default {
   }
 
   .title, .subtitle {
-    color: white;
+    color: $site-white;
   }
 
   .bottom-paddingless {
