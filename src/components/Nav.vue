@@ -70,6 +70,8 @@
   }
 
   .navbar {
+    border-bottom: 3px solid $site-green;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
     &.is-fixed-top {
       max-width: 1440px;
       margin-left: auto;
