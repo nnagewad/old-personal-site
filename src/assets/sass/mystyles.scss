@@ -45,11 +45,10 @@ a {
   font-weight: $weight-semibold;
 }
 
-p > a {
-  position: relative;
-}
-
 p {
+  & > a {
+    position: relative
+  }
   a:before {
     content: "";
     position: absolute;
