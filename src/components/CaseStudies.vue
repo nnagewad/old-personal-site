@@ -1,29 +1,18 @@
 <template>
   <section class="section" id="case-studies">
     <div class="container">
-      <h2 class="title has-text-centered is-capitalized is-2">Case Studies</h2>
+      <h2 class="title is-capitalized is-2">Case Studies</h2>
 
-      <div v-if="loadingState" class="columns is-centered">
-        <div class="column is-narrow has-text-centered">
-          <svg
-            class="rotate"
-            xmlns="http://www.w3.org/2000/svg"
-            width="75"
-            height="75"
-            viewBox="0 0 129 129"
-          >
-            <title>Loading Status</title>
-            <path
-              d="M55.5,0.622906096 L55.5,15.816193 C32.4589376,20.0485 15,40.2353733 15,64.5 C15,91.8380951 37.1619049,114 64.5,114 C91.8380951,114 114,91.8380951 114,64.5 C114,40.2353733 96.5410624,20.0485 73.5,15.816193 L73.5,0.622906096 C104.861969,5.00147027 129,31.9318656 129,64.5 C129,100.122366 100.122366,129 64.5,129 C28.8776336,129 0,100.122366 0,64.5 C0,31.9318656 24.1380307,5.00147027 55.5,0.622906096 Z"
-            ></path>
-          </svg>
+      <div v-if="loadingState" class="columns">
+        <div class="column is-two-thirds">
+          <p>Loading portfolio pieces from Medium...</p>
         </div>
       </div>
 
-      <div v-if="errorMessage" class="columns is-centered">
-        <div class="column is-narrow">
-          <p class="has-text-centered is-size-5" v-scroll-reveal="{ delay: 500 }">
-            You can find all my articles on <a href="https://nkngwd.medium.com/">Medium</a>.
+      <div v-if="errorMessage" class="columns">
+        <div class="column is-two-thirds">
+          <p v-scroll-reveal="{ delay: 500 }">
+            Head over to <a href="https://nkngwd.medium.com/">Medium</a> to view my portfolio pieces.
           </p>
         </div>
       </div>
