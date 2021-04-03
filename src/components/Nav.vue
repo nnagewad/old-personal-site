@@ -75,19 +75,18 @@
       margin-left: auto;
       margin-right: auto;
     }
-  }
 
-  .navbar-brand {
-    svg {
-      height: 27px;
-      width: auto;
-      fill: white;
-    }
-    a:hover {
+    & a.navbar-item:hover {
+      background: $site-light-green;
       svg {
-        fill: $site-light-green;
+        fill: $site-green;
       }
     }
+  }
+
+  .navbar-item {
+    font-weight: $weight-bold;
+    color: white;
   }
 
   .navbar-burger {
@@ -98,12 +97,10 @@
     }
   }
 
-  .navbar-item {
-    font-weight: $weight-bold;
-    color: white;
-  }
-
   svg {
+    height: 27px;
+    width: auto;
+    fill: white;
     transition: all 0.5s ease;
   }
 
