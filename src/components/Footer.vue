@@ -52,11 +52,9 @@
   
   a {
     svg {
-      transition: 0.5s all ease;
       fill: $link;
     }
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       svg {
         fill: $link-hover;
       }
