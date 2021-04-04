@@ -3,9 +3,9 @@
     <Nav />
     <main>
       <Hero />
-      <CaseStudies />
+      <Collection />
       <HorizontalRule />
-      <About />
+      <Biography />
     </main>
     <Footer />
   </div>
@@ -14,8 +14,8 @@
 <script>
   import Nav from "./components/Nav.vue"
   import Hero from "./components/Hero.vue"
-  import About from "./components/About.vue"
-  import CaseStudies from "./components/CaseStudies.vue"
+  import Biography from "./components/Biography.vue"
+  import Collection from "./components/Collection.vue"
   import HorizontalRule from "./components/HorizontalRule.vue"
   import Footer from "./components/Footer.vue"
 
@@ -24,8 +24,8 @@
     components: {
       Nav,
       Hero,
-      About,
-      CaseStudies,
+      Biography,
+      Collection,
       HorizontalRule,
       Footer
     }
@@ -42,7 +42,7 @@
   }
 
   main {
-    background-color: white;
+    background-color: $site-white;
   }
 
   a {

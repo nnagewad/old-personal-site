@@ -1,7 +1,7 @@
 <template>
-  <section class="section" id="case-studies">
+  <section class="section" id="collection">
     <div class="container">
-      <h2 class="title is-capitalized is-3">Case Studies</h2>
+      <h2 class="title is-capitalized is-3">Collection</h2>
 
       <div v-if="loadingState" class="columns">
         <div class="column is-two-thirds">
@@ -50,7 +50,7 @@
 import axios from "axios";
 
 export default {
-  name: "CaseStudies",
+  name: "Collection",
   data() {
     return {
       loadingState: true,

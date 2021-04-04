@@ -1,7 +1,7 @@
 <template>
-  <section class="section" id="about">
+  <section class="section" id="biography">
     <div class="container">
-      <h2 class="title is-capitalized is-3">About</h2>
+      <h2 class="title is-capitalized is-3">Biography</h2>
       <div class="columns">
         <div class="column is-two-thirds">
           <p>Although he graduated with a degree in film studies, Nikin’s interest in technology and design led him to a career in UX design. From <a href="https://www.freshbooks.com/" rel="noreferrer">Freshbooks</a> to <a href="https://sayyeah.com/" rel="noreferrer">Say Yeah</a>, Nikin helped craft interfaces and front-end code that balanced business and user objectives.</p>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "About"
+  name: "Biography"
 };
 </script>
 

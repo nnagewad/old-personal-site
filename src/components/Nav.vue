@@ -28,7 +28,7 @@
     data() {
       return {
         navCloseButton: false,
-        menuItems: ['Case studies', 'About'],
+        menuItems: ['Collection', 'Biography'],
       }
     },
     methods: {
