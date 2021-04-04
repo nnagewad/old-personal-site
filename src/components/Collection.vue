@@ -25,8 +25,8 @@
         </div>
         <div class="columns is-multiline is-centered">
           <div v-for="mediumPost in mediumPosts" :key="mediumPost.title" class="column is-one-third">
-            <div class="card" v-scroll-reveal="{ delay: 500 }">
-              <a :href="mediumPost.link" rel="noopener" aria-label="Redirect to Medium">
+            <a :href="mediumPost.link" rel="noopener" aria-label="Redirect to Medium" >
+              <div class="card" v-scroll-reveal="{ delay: 500 }">
                 <div class="card-image">
                   <figure class="image is-16by9">
                     <lazy-component>
@@ -37,8 +37,8 @@
                 <div class="card-content">
                   <h3>{{ mediumPost.title }}</h3>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div> 
       </div>
@@ -88,6 +88,11 @@ export default {
 
   .card {
     height: 100%;
+    color: $site-green;
+  }
+
+  a:hover > h3 {
+    color: $link-hover;
   }
 
   .image img {

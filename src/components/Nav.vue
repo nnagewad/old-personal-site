@@ -87,8 +87,7 @@
   .navbar-burger {
     color: white;
     &:hover {
-      background: $site-light-green;
-      color: $site-green;
+      color: $site-light-green;
     }
   }
 
