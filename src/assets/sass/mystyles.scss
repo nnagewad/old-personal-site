@@ -49,9 +49,10 @@ a {
 p > a, a .card-content, a.navbar-item {
   text-decoration: underline !important;
   text-decoration-thickness: 0.125rem !important;
-  &:hover {
-    text-decoration-thickness: 0.2rem !important;
-  }
+}
+
+p > a:hover, a:hover .card-content, a.navbar-item:hover {
+  text-decoration-thickness: 0.2rem !important;
 }
 
 @import "~bulma/sass/utilities/derived-variables";
