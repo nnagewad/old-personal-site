@@ -36,5 +36,8 @@ export default {
 
   p {
     padding-bottom: 1rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 </style>
