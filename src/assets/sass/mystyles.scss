@@ -32,6 +32,9 @@ $navbar-item-hover-background-color: $site-light-green;
 
 $title-weight: $weight-bold;
 
+$tag-background-color: $site-black;
+$tag-color: $site-white;
+
 ::selection {
   background: $site-light-green;
 }
@@ -72,6 +75,7 @@ p {
 @import "~bulma/sass/utilities/mixins";
 @import "~bulma/sass/base/_all";
 @import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/tag";
 @import "~bulma/sass/elements/title";
 @import "~bulma/sass/elements/image";
 @import "~bulma/sass/components/card";
