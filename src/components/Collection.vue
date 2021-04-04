@@ -34,13 +34,14 @@
                     </lazy-component>
                   </figure>
                 </div>
+                <div class="tags">
+                  <div v-for="category in mediumPost.categories" :key=category>
+                    <span class="tag is-normal is-capitalized ">{{ category.replace('-', ' ') }}</span>
+                  </div>
+                </div>
+                
                 <div class="card-content">
                   <h3>{{ mediumPost.title }}</h3>
-
-                  <div v-for="category in mediumPost.categories" :key=category>
-                    <small class="tag is-normal is-capitalized ">{{ category.replace('-', ' ') }}</small>
-                  </div>
-                  
                 </div>
               </div>
             </a>
@@ -105,5 +106,19 @@ export default {
 
   .image img {
     object-fit: cover;
+  }
+
+  .card-content {
+    padding: 0 0.75rem 1.5rem;
+  }
+
+  .tags:not(:last-child) {
+    margin-bottom: 0;
+    padding: 0.5rem 0.75rem 0;
+  }
+
+  .tag {
+    margin-right: 0.5rem;
+    font-family: $family-sans-serif;
   }
 </style>

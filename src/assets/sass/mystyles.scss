@@ -30,6 +30,9 @@ $navbar-item-hover-background-color: transparent;
 
 $title-weight: $weight-bold;
 
+$tag-background-color: $site-black;
+$tag-color: $site-white;
+
 ::selection {
   background: $site-light-green;
 }
@@ -41,6 +44,9 @@ footer.footer {
 a {
   font-family: $family-serif;
   font-weight: $weight-semibold;
+}
+
+p > a, a .card-content, a.navbar-item {
   text-decoration: underline !important;
   text-decoration-thickness: 0.125rem !important;
   &:hover {
@@ -52,6 +58,7 @@ a {
 @import "~bulma/sass/utilities/mixins";
 @import "~bulma/sass/base/_all";
 @import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/tag";
 @import "~bulma/sass/elements/title";
 @import "~bulma/sass/elements/image";
 @import "~bulma/sass/components/card";
