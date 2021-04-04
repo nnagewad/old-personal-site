@@ -36,6 +36,11 @@
                   </lazy-component>
                 </figure>
               </div>
+              <div class="tags">
+                <div v-for="category in mediumPost.categories.sort()" :key=category>
+                  <span class="tag is-normal is-capitalized ">{{ category.replace('-', ' ') }}</span>
+                </div>
+              </div>
               <div class="card-content">
                 <h3>{{ mediumPost.title }}</h3>
               </div>
