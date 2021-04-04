@@ -88,9 +88,13 @@ export default {
 
   .card {
     height: 100%;
-    color: $link;
+    & > .card-content {
+      color: $link;
+    }
     &:hover {
-      color: $link-hover;
+      & > .card-content {
+        color: $link-hover;  
+      }
     }
   }
 
