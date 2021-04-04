@@ -5,39 +5,42 @@
 
       <div v-if="loadingState" class="columns">
         <div class="column is-two-thirds">
-          <p>Loading portfolio pieces from Medium...</p>
+          <p>Loading collection from Medium...</p>
         </div>
       </div>
 
       <div v-if="errorMessage" class="columns">
         <div class="column is-two-thirds">
           <p v-scroll-reveal="{ delay: 500 }">
-            Head over to <a href="https://nkngwd.medium.com/">Medium</a> to view my portfolio pieces.
+            Head over to <a href="https://nkngwd.medium.com/" rel="noreferrer">Medium</a> to view my collection of my articles and case studies.
           </p>
         </div>
       </div>
 
-      <div class="columns is-multiline is-centered">
-        <div
-          v-for="mediumPost in mediumPosts"
-          :key="mediumPost.title"
-          class="column is-one-third"
-        >
-          <div class="card" v-scroll-reveal="{ delay: 500 }">
-            <a :href="mediumPost.link" rel="noopener" aria-label="Redirect to Medium">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <lazy-component>
-                    <img :src="mediumPost.thumbnail" alt="Medium Post Image Thumbnail">
-                  </lazy-component>
-                </figure>
-              </div>
-              <div class="card-content">
-                <h3>{{ mediumPost.title }}</h3>
-              </div>
-            </a>
+      <div v-if="mediumPosts">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <p>Below is a collection of my articles and case studies available on <a href="https://nkngwd.medium.com/" rel="noreferrer">Medium</a>.</p>
           </div>
         </div>
+        <div class="columns is-multiline is-centered">
+          <div v-for="mediumPost in mediumPosts" :key="mediumPost.title" class="column is-one-third">
+            <div class="card" v-scroll-reveal="{ delay: 500 }">
+              <a :href="mediumPost.link" rel="noopener" aria-label="Redirect to Medium">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <lazy-component>
+                      <img :src="mediumPost.thumbnail" alt="Medium Post Image Thumbnail">
+                    </lazy-component>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3>{{ mediumPost.title }}</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div> 
       </div>
     </div>
   </section>
