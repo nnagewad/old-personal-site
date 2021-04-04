@@ -25,15 +25,10 @@ $section-padding: 3rem 1.5rem;
 $link: $site-green;
 $link-hover: darken($link, 7.5%);
 
-$navbar-item-active-color: $link;
-$navbar-item-focus-color: $link;
-$navbar-item-hover-color: $site-green;
-$navbar-item-hover-background-color: $site-light-green;
+$navbar-item-hover-color: $site-light-green;
+$navbar-item-hover-background-color: transparent;
 
 $title-weight: $weight-bold;
-
-$tag-background-color: $site-black;
-$tag-color: $site-white;
 
 ::selection {
   background: $site-light-green;
@@ -46,28 +41,10 @@ footer.footer {
 a {
   font-family: $family-serif;
   font-weight: $weight-semibold;
-}
-
-p {
-  & > a {
-    position: relative
-  }
-  a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: $link;
-    visibility: visible;
-    transform: scaleX(1);
-    transition: all 0.25s ease;
-  }
-  a:hover:before,
-  a:focus:before {
-    visibility: hidden;
-    transform: scaleX(0);
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.125rem !important;
+  &:hover {
+    text-decoration-thickness: 0.2rem !important;
   }
 }
 
@@ -75,7 +52,6 @@ p {
 @import "~bulma/sass/utilities/mixins";
 @import "~bulma/sass/base/_all";
 @import "~bulma/sass/elements/container";
-@import "~bulma/sass/elements/tag";
 @import "~bulma/sass/elements/title";
 @import "~bulma/sass/elements/image";
 @import "~bulma/sass/components/card";
