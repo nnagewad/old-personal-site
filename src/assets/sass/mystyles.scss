@@ -52,7 +52,7 @@ p > a, a .card-content, a.navbar-item {
 
 p > a:hover, a:hover .card-content, a.navbar-item:hover {
   text-underline-offset: 15%;
-  text-decoration-thickness: 10%;
+  text-decoration-thickness: 0.15rem;
 }
 
 @import "~bulma/sass/utilities/derived-variables";
