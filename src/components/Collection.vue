@@ -37,7 +37,7 @@
                 <div class="card-content">
                   <h3>{{ mediumPost.title }}</h3>
 
-                  <div v-for="category in mediumPost.categories.sort()" :key=category>
+                  <div v-for="category in mediumPost.categories" :key=category>
                     <small class="tag is-normal is-capitalized ">{{ category.replace('-', ' ') }}</small>
                   </div>
                   
