@@ -46,6 +46,7 @@ footer.footer {
 a {
   font-family: $family-serif;
   font-weight: $weight-semibold;
+  transition: none;
 }
 
 p > a, a .card-content, a.navbar-item {
