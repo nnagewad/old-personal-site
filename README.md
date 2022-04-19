@@ -3,4 +3,4 @@
 - Built using VUE.js.
 - Calling Medium using Axios.
 ## Live
-- https://nikin.design
+- https://nikin-portfolio-old.netlify.app
